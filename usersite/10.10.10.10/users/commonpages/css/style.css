@@ -1,0 +1,32 @@
+/* Start Loading ================================================================================================================================================ */
+.loader-ring {top: calc(50% - 5px);left: calc(50% - 5px);}
+.loader-ring, .loader-ring:before, .loader-ring:after {
+  display: inline-block;/*border:1px solid red;*/
+  width: 8px;height: 26px;line-height:65px;transform-origin:4px 0px;color: #13cffd;
+  font-size:35px;font-family: "Times New Roman";position: absolute;z-index: 100000;content: '•';
+}
+.loader-ring:before, .loader-ring:after {
+  opacity:0;text-shadow: 11px -2px 0px #13cffd, -11px -3px 0px #13cffd;
+  transform: rotateZ(0deg);
+  animation: loading 3s cubic-bezier(.15,.65,.85,.35) infinite, loading-shadow 1.5s cubic-bezier(.25,.75,.35,1) infinite alternate, loading-opacity 3s infinite;
+}
+.loader-ring:after {animation-delay: 1.1s;}
+@keyframes loading {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes loading-shadow {
+  from {
+    text-shadow: 20px -7px 0px #13cffd, -20px -7px 0px #13cffd;
+  }
+}
+@keyframes loading-opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*End Loading ================================================================================================================================================= */

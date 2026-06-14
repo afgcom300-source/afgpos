@@ -1,0 +1,341 @@
+body {
+    font-family: bYekan
+}
+
+.DS_title {
+    float: right;
+    padding: 10px 20px
+}
+
+.DS_title i {
+    float: right;
+    margin: 6px 0 0 7px
+}
+
+.DS_title span {
+    float: right
+}
+
+.DS_hr {
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 0) 34%, rgba(204, 204, 204, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(34%, rgba(238, 238, 238, 0)), color-stop(100%, rgba(204, 204, 204, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 0) 34%, rgba(204, 204, 204, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 0) 34%, rgba(204, 204, 204, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 0) 34%, rgba(204, 204, 204, 1) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 0) 34%, rgba(204, 204, 204, 1) 100%);
+    float: right;
+    margin: 0 5px 0 0
+}
+
+.DS_absolute {
+    right: 0
+}
+
+.forms {
+    float: right;
+    margin: 20px 10px 20px 0
+}
+
+.input {
+    float: right
+}
+
+.input span {
+    right: 10px;
+    top: 8px
+}
+.input .DS_FixIcon {
+    right: 10px;
+    top: 8px
+}
+.input input {
+    padding: 8px 38px 8px 5px;
+    border-radius: 7px 7px 7px 7px
+}
+
+.input select {
+    padding: 5px 35px 8px 5px;
+    border-radius: 4px 0 0 4px
+}
+
+.input input:focus {
+    padding: 8px 5px 8px 10px
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -453px
+    }
+    100% {
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px
+    }
+}
+
+.DS_login_image {
+    left: -1000px
+}
+
+@keyframes ScaleImageSize {
+    0% {
+        left: -1000px
+    }
+    100% {
+        left: 40px
+    }
+}
+
+.DS_language {
+    left: 10px
+}
+
+.DS_language button{left:3px}
+.DeltaSIB_Icons {
+    float: right
+}
+
+.DeltaSIB_Icons .ico {
+    float: right
+}
+
+.DeltaSIB_Icons .text {
+    float: right;
+    margin: 0 7px 0 3px
+}
+
+.DeltaSIB_Icons .badgesCardRegister {
+    width:50px;
+}
+
+.DeltaSIB_Icons .badgesCardLogin {
+    width:75px;
+}
+
+.DeltaSIB_Icons .badgesCardHome {
+    width:80px;
+}
+
+.DeltaSIB_Icons .badgesCardFeedBack {
+    width: 150px;
+}
+
+.DeltaSIB_Icons .text a {
+    float: right;
+    margin: 0 3px 0 0;
+}
+
+.Links_over {
+    right: 12px;
+}
+
+.DS_computer_float {
+    float: right;
+}
+
+.DS_computer_Dir {
+    direction: rtl;
+}
+
+.DS_admin_float {
+    float: right;
+}
+.DS_admin_float_Rev {
+    float: left;
+}
+.user {
+    float: right
+}
+
+/*.DS_user_welcoming {
+    float: left;
+    text-align: right;
+    width: 78%
+}
+
+.DS_user_welcoming span {
+    float: right
+}
+
+.DS_user_welcoming strong {
+    float: right
+}*/
+
+.subs {
+    display: none
+}
+
+.subs ul li a {
+    text-align: right
+}
+
+.nav,
+.nav .menu {
+    float: right
+}
+
+.profilepicture {
+    right: 10px
+}
+
+.PictureProfile {
+    right: 3px
+}
+
+.pulse1,
+.pulse2 {
+    right: 0
+}
+
+.DS_MyInternet_Panel .Pane {
+    float: right
+}
+
+.DS_MyInternet_Panel .Pane .Title,
+.c-tab__content .c-tab__Title {
+    border-radius: 0 5px 0 0;
+    float: right;
+    background: -webkit-linear-gradient(-90deg, #13cffd, white);
+    background: -o-linear-gradient(-90deg, #13cffd, white);
+    background: -moz-linear-gradient(-90deg, #13cffd, white);
+    background: linear-gradient(-90deg, #13cffd, white)
+}
+
+.DS_MyInternet_Panel .Pane .Title span {
+    float: right;
+    text-align: right;
+    margin: 5px 30px 0 0;
+    padding: 3px 5px 0 0
+}
+
+.DS_MyInternet_Panel .Pane .Title i {
+    right: 8px
+}
+
+.Table_Title {
+    padding: 0 32px 0 0
+}
+
+table {
+    direction: rtl;
+    text-align: right
+}
+
+.nav .menu {
+    background: url(../images/DS_MenuSeprator.png) no-repeat left center
+}
+
+.ChartLegend {
+    margin: 12px 15px 0 0
+}
+
+.colorBox {
+    float: right
+}
+
+strong {
+    font-family: BYekan
+}
+
+.dLi {
+    text-align: right
+}
+
+
+.FeedBackResponse {
+    float: right;
+    margin: 35px 10px 0 0
+}
+
+.FeedBackResponse div {
+    right: 10px
+}
+
+.FeedBackResponse span {
+    left: 5px
+}
+
+.c-tabs-nav__link {
+    float: right;
+    text-align: left
+}
+
+.DS_PopOver {
+    right: 0;
+    text-align: right
+}
+
+.DS_PopOver .DS_PopOver_Arrow {
+    right: 22px
+}
+
+.Userprofile_BlockItem .Icon {
+    float: right;
+    padding: 0 30px 0 15px;
+    border-left: 1px solid #ccc
+}
+
+.Userprofile_BlockItem .Icon i {
+    right: 5px
+}
+
+.DS_Mobile_Menu_Items {
+    right: 0;
+    border-radius: 0 10px 0 5px;
+    box-shadow: -2px 2px 2px #fff8e3
+}
+
+.DS_Mobile_Menu {
+    float: right
+}
+
+.DS_Mobile_Menu .DS_Mobile_Menu_Icon {
+    ;
+    right: 10px
+}
+
+.DS_Mobile_Menu_Items ul {
+    float: right
+}
+
+.DS_Mobile_Menu_Items ul li {
+    float: right;
+    padding: 0 20px 0 0
+}
+
+.DS_Mobile_Menu_Items ul li a {
+    float: right
+}
+
+.HasSubMenu {
+    left: 5px
+}
+
+.Mobile_Menu_Icon {
+    right: 7px
+}
+
+.DS_Mobile_Menu_Text {
+    float: right;
+    margin: 12px  70px 0 0;
+}
+.InputGroupAddonCustom{right: 0}
+.DS_InputGroupFixed{margin:5px 5px 0 0;}
+.DS_user_welcoming {text-align:right;}
+.colorBox {right:-15px;}
+.DS_AddonCustomBx{text-align:right;padding:30px 15px 7px 0}
+.DS_AddonCustomBx p{padding:2px 5px 0 0}
+.ClassicView{right:15px}
+.DS_CountDownTimer{left:0;}
+.DS_ChartLine_ShowDetails{float:left;margin:2px 0 0 10px;}
+.DS_Banks{float:right;margin:7px 5px 0 0;}
+.DS_Banks_Strip{/*border-top:1px solid #13cffd;border-bottom:1px solid #13cffd;*/
+    background: -webkit-linear-gradient(-90deg, #d3ecf2, white);
+    background: -o-linear-gradient(-90deg, #d3ecf2, white);
+    background: -moz-linear-gradient(-90deg, #d3ecf2, white);
+    background: linear-gradient(-90deg, #d3ecf2, white)
+}

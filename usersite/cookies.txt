@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+10.10.10.10	TRUE	/	FALSE	1999999999	DSUSERSESSID	ptah4mbbe0a2lhu53r7i1ercd1
+10.10.10.10	TRUE	/	FALSE	1999999999	DSUserTimeOut	0
+

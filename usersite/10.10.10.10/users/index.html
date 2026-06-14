@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    
+<!-- Mirrored from 10.10.10.10/users/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jun 2026 02:36:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>سایت کاربران </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta NAME="REVISIT-AFTER" CONTENT="1 DAYS">
+        <meta NAME="COPYRIGHT" CONTENT="Copyright (c) by Payamavaran Kavir Co.">
+        <meta name="email" content="info@birjand.net" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- DeltaSIB Icons Css --><link rel="stylesheet" href="commonpages/css/DeltaSIBIcons/Icons.css" />
+        <!-- bootstrap Css --><link rel="stylesheet" href="commonpages/css/bootstrap.rtl.min.css" />
+        <!-- Common Css Styles--><link rel="stylesheet" href="commonpages/css/style.css" />
+        <!-- BYekan Font --><link rel="stylesheet" href="commonpages/css/BYekan.css" />
+        <!-- jquery Required For Bootstrap --><script  type="text/javascript" src="commonpages/js/jquery.js"></script>
+        <!-- bootstrap --><script  type="text/javascript" src="commonpages/js/bootstrap.min.js"></script>
+        <!-- popular Functions --><script  type="text/javascript" src="commonpages/js/index.js"></script>
+        <!-- DS form validate --><script  type="text/javascript" src="commonpages/js/DS_validate.js"></script>
+        
+        <link rel="stylesheet" href="computer/css/DS_computer_style.css" />
+        <link rel="stylesheet" href="computer/css/DS_fa_style.css" />
+
+    </head>
+    <script>
+        var User_Id = 0;
+        function ShowAutoLogin(Username, Delay) {
+            var DelayTimer = Delay;
+            DSConfirm({
+                text: "ورود خودکار با نام کاربری '" +
+                        Username + "'<br/><span id='DelayTimer'>" +
+                        (Math.round(10 * DelayTimer - 1) / 10) + "</span> ثانیه",
+                callback: function (res) {
+                    clearInterval(AutoLoginTimeoutId);
+                    if (res)
+                        DoAjax('', 'commonpages/DSUserProcessLogind41d.php?', '&act=AutoLogin', DoAfterAjax);
+                },
+                ok: "ورود سریع",
+                cancel: "لغو",
+                close:true,
+                title:"ورود خودکار"
+            });
+
+            AutoLoginTimeoutId = setInterval(function () {
+                DelayTimer = Math.round(10 * DelayTimer - 1) / 10;
+                document.getElementById("DelayTimer").innerHTML = DelayTimer;
+                if (DelayTimer <= 0)
+                    callbacktop(true);
+            }, 100);
+        }
+
+        function DoAfterAjax(Res) {
+            if (Res == '')
+                DSAlert({text: "Empty response", type: "alert-error"});
+            else if (Res[0] == '~')
+                DSAlert({text: Res.substring(1), type: "alert-error"});
+            else {
+                var ResArray = Res.split("~");
+                if (ResArray[0] != "OK") {
+                    DSAlert({text: Res, type: "alert-error"});
+                } else {
+                    User_Id = ResArray[1];
+                    SetIFrame('DS_MyInternet.html', '');
+                    DSProgressOn();
+                }
+            }
+        }
+
+        function SetIFrame(url, param) {
+            document.getElementById("MainBox").src = "computer/" + url + "?&WebNewUser=No&NCR=No&Feedback=No" + param + "&User_Id=" + User_Id+"&Device=computer";
+        }
+        function DoOnload() {
+            //window.onbeforeunload = function(){return "Refreshing this page can result in data loss."}
+            DoOnResize();
+
+
+            SetIFrame('DS_Home.html', '');
+        }
+
+        function DoOnResize() {
+            document.getElementById('MainBox').style.height = $(window).height() + "px";
+        }
+    </script>
+    <body onload=DoOnload() onresize=DoOnResize() style="overflow:hidden;">
+        <iframe frameborder="0" style="width:100%;height:100%" height="100%" id="MainBox"></iframe>
+    </body>
+
+<!-- Mirrored from 10.10.10.10/users/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jun 2026 02:36:34 GMT -->
+</html>
+
